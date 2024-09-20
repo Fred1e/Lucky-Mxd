@@ -31,25 +31,21 @@ this is* *LUCKY_MD V7.*\n support our channel *by*,  https://whatsapp.com/channe
 ╰──━━━━━━☆•∞•☆━━━━━━⊛
    
 
-         ┌─═━━━⊷•∞•⊷━━━──✣
-   ╭─⦿ ━━━══✣══━━➻
- ┌┤😶‍🌫️*VISITORS:* ${repoInfo.visitors}
- ┃│🌟 *STARS:* ${repoInfo.stars}
- ┃│🧧 *FORKS:* ${repoInfo.forks}
- ┃│📅 *RELEASE DATE:* ${releaseDate}
- ┌┤👨‍💻 *OWNER:* *Fredie tech*
- ┃│💞 *THEME:* *FREDI*
- ┃│🥰 *ENJOY TO USE LUCKY MD*
-   ╰─⦿ ━━━══✣══━━➻
-         └─═━━━⊷•∞•⊷━━━──✣
+  ╭─═━━⊷•∞•⊷━━━──⊛
+ ┌┤❁*VISITORS:* ${repoInfo.visitors}
+ ┃│❁ *STARS:* ${repoInfo.stars}
+ ┃│❁ *FORKS:* ${repoInfo.forks}
+ ┃│❁ *RELEASE DATE:* ${releaseDate}
+ ┌┤❁ *OWNER:* *Fredie tech*
+ ┃│❁ *THEME:* *FREDI*
+ ┃│❁ *ENJOY TO USE LUCKY MD*
+ └─═━━━⊷•∞•⊷━━━──⊛
  
   ▓▒━━━⊷➻•∞•➻➳⊷━━━▒▓
-  
-        ╭──═════──❖ 
+   
 ╭  ╭❂ ⊷━━━━•∞•━━━━⊷
 ║  ┃ _*Made With Fredie Tech*_
-╰  ╰❂ ⊷━━━━•∞•━━━━⊷
-        ╰──═════──❖ `;
+╰  ╰❂ ⊷━━━━•∞•━━━━⊷ `;
 
       await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
     } else {
