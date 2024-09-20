@@ -31,7 +31,7 @@ async function uploadToTelegraph(path) {
     }
 }
 
-zokou({ nomCom: "link", categorie: "General", reaction: "👨🏿‍💻" }, async (origineMessage, zk, commandeOptions) => {
+zokou({ nomCom: "url4", categorie: "General", reaction: "♻️" }, async (origineMessage, zk, commandeOptions) => {
     const { msgRepondu, repondre } = commandeOptions;
 
     if (!msgRepondu) {
