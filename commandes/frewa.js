@@ -1,34 +1,28 @@
-const { zokou } = require("../framework/zokou");
-const moment = require("moment-timezone");
-const { getBuffer } = require("../framework/dl/Function");
-const { default: axios } = require('axios');
+const {
+  zokou
+} = require("../framework/zokou");
+const {
+  default: axios
+} = require("axios");
+zokou({
+  nomCom: "create",
+  reaction: '😀',
+  categorie: "LUCKY_MD PICTURES"
+}, async (message, sendMessage, { repondre, arg, ms }) => {
+  try {
+    const response = await fetch("https://api.unsplash.com/photos/random?client_id=72utkjatCBC-PDcx7-Kcvgod7-QOFAm2fXwEeW8b8cc");
+    const data = await response.json();
+    const imageUrl = data.urls.regular;
 
+    const messageData = {
+      image: {
+        url: imageUrl
+      },
+      caption: "*POWERED BY LUCKY_MD*"
+    };
 
-zokou(
-  {
-    nomCom: "aesthetic",
-    category: "wallpaper",
-    reaction: "😅",
-    filename: __filename,
-    desc: "Get an aesthetic wallpaper.",
-  },
-  async (m) => {
-    try {
-      let apiUrl = "https://api.maher-zubair.tech/wallpaper/asthetic";
-      let response = await fetch(apiUrl);
-      let jsonResponse = await response.json();
-
-      if (jsonResponse.status === 200) {
-        await m.send(jsonResponse.url, { caption: Config.caption }, "image", m);
-      } else {
-        await m.send("*_Request not be preceed!!_*");
-      }
-    } catch (error) {
-      await m.error(
-        error + "\n\nnomCom: aesthetic",
-        error,
-        "*_No responce from API, Sorry!!_*"
-      );
-    }
+    await sendMessage(message, messageData, { quoted: ms });
+  } catch (error) {
+    console.error("Error fetching wallpaper:", error);
   }
-);
+});
