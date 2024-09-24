@@ -4,7 +4,7 @@ const { zokou } = require("../framework/zokou");
 
 zokou({ nomCom: "repo", catégorie:"Général", reaction: "⚙️", nomFichier: __filename }, async (dest, zk, commandeOptions) => {
   const githubRepo = 'https://api.github.com/repos/Fred1e/LUCKY_MD';
-  const img = 'https://i.imgur.com/hRP6xPl.jpeg';
+  const img = 'https://files.catbox.moe/xee8ol.jpg';
 
   try {
     const response = await fetch(githubRepo);
@@ -29,18 +29,19 @@ This Is* *LUCKY_MD.*\n _Support Our Channel_ *by*,  https://whatsapp.com/channel
 🕐 *UPDATE ON:* ${repoInfo.lastUpdate}
 ⊷━━━━━━☆•∞•☆━━━━━━⊷  
 
- ╭━═✺ *FREDIE* ✺═━⊷
- ┊┃ ╭─═━━⊷•∞•⊷━━─⊛
+ ╭━━═✺ *FREDIE* ✺═━━⊷
+ ┊│┌═━━⊷•∞•⊷━━─⊛
  ┌┤┊❁*VISITORS:* ${repoInfo.visitors}
- ┃│┊❁ *STARS:* ${repoInfo.stars}
- ┃│┊❁ *FORKS:* ${repoInfo.forks}
- ┃│┊❁ *RELEASE DATE:* ${releaseDate}
+ ┊│┊❁ *STARS:* ${repoInfo.stars}
+ ┊│┊❁ *FORKS:* ${repoInfo.forks}
+ ┊│┊❁ *RELEASE DATE:* ${releaseDate}
  ┌┤┊❁ *OWNER:* *Fredie tech*
- ┃│┊❁ *THEME:* *FREDI*
- ┃│┊❁ *ENJOY TO USE LUCKY MD*
- └─═━━━⊷•∞•⊷━━━──⊛ 
+ ┊│┊❁ *THEME:* *FREDI*
+ ┊│┊❁ *ENJOY TO USE LUCKY MD*
+ ┊│└═━━⊷•∞•⊷━━─⊛
+ ╰━━━═⊷✺•∞•✺⊷═━━━⊷ 
  
- > _Dont Forget Fork And Star Please_ `;
+ > Dont Forget Fork And Star Please `;
 
       await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
     } else {
