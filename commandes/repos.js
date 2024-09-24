@@ -21,31 +21,26 @@ zokou({ nomCom: "repo", catégorie:"Général", reaction: "⚙️", nomFichier: 
       const releaseDate = new Date(data.created_at).toLocaleDateString('en-GB');
       const lastUpdateDate = new Date(data.updated_at).toLocaleDateString('en-GB');
 
-      const gitdata = `*hellow whatsaap user
-this is* *LUCKY_MD V7.*\n support our channel *by*,  https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f
+      const gitdata = ` *Hellow User
+This Is* *LUCKY_MD.*\n _Support Our Channel_ *by*,  https://whatsapp.com/channel/0029VaihcQv84Om8LP59fO3f
 
+🗼 *REPOSITORY:* ${data.html_url}
 
-╭──━━━━━━☆•∞•☆━━━━━━⊛
-└│🗼 *REPOSITORY:* ${data.html_url}
-┌┤🕐 *UPDATE ON:* ${repoInfo.lastUpdate}
-╰──━━━━━━☆•∞•☆━━━━━━⊛
-   
+🕐 *UPDATE ON:* ${repoInfo.lastUpdate}
+⊷━━━━━━☆•∞•☆━━━━━━⊷  
 
-  ╭─═━━⊷•∞•⊷━━━──⊛
- ┌┤❁*VISITORS:* ${repoInfo.visitors}
- ┃│❁ *STARS:* ${repoInfo.stars}
- ┃│❁ *FORKS:* ${repoInfo.forks}
- ┃│❁ *RELEASE DATE:* ${releaseDate}
- ┌┤❁ *OWNER:* *Fredie tech*
- ┃│❁ *THEME:* *FREDI*
- ┃│❁ *ENJOY TO USE LUCKY MD*
- └─═━━━⊷•∞•⊷━━━──⊛
+ ╭━═✺ *FREDIE* ✺═━⊷
+ ┊┃ ╭─═━━⊷•∞•⊷━━─⊛
+ ┌┤┊❁*VISITORS:* ${repoInfo.visitors}
+ ┃│┊❁ *STARS:* ${repoInfo.stars}
+ ┃│┊❁ *FORKS:* ${repoInfo.forks}
+ ┃│┊❁ *RELEASE DATE:* ${releaseDate}
+ ┌┤┊❁ *OWNER:* *Fredie tech*
+ ┃│┊❁ *THEME:* *FREDI*
+ ┃│┊❁ *ENJOY TO USE LUCKY MD*
+ └─═━━━⊷•∞•⊷━━━──⊛ 
  
-  ▓▒━━━⊷➻•∞•➻➳⊷━━━▒▓
-   
-╭  ╭❂ ⊷━━━━•∞•━━━━⊷
-║  ┃ _*Made With Fredie Tech*_
-╰  ╰❂ ⊷━━━━•∞•━━━━⊷ `;
+ > _Dont Forget Fork And Star Please_ `;
 
       await zk.sendMessage(dest, { image: { url: img }, caption: gitdata });
     } else {
