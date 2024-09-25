@@ -119,7 +119,7 @@ zokou({
       fileStream.on('finish', () => {
         zk.sendMessage(origineMessage, {
           video: { url: "video.mp4" },
-          caption: "*𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄𝐃 𝐁𝐘 𝐀𝐋𝐏𝐇𝐀*",
+          caption: "*𝐋𝐔𝐂𝐊𝐘 𝐌𝐄𝐃𝐈𝐀 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐎𝐑*",
           gifPlayback: false
         }, { quoted: commandeOptions.ms });
       });
