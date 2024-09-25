@@ -41,7 +41,7 @@ const date = moment().format('DD/MM/YYYY');
     let menuMsg = `𝙻𝚞𝚌𝚔𝚢 𝙼𝚍 𝙲𝚖𝚍`;
     for (const cat in coms) {
         menuMsg += `
-╭━━═✺ *cat* ✺═━━⊷ 
+╭━━═✺ *${cat}* ✺═━━⊷ 
 ┊│┌═━━⊷•∞•⊷━━─⊛
 ┊│┊
 ┌┤┊ `;for (const cmd of coms[cat]) {
